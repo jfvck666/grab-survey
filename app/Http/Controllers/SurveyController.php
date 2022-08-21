@@ -58,8 +58,8 @@ class SurveyController extends Controller
         return redirect()->route('index');
     }
 
-    public function saveGps(Request $request)
+    public function getRawData(Request $request)
     {
-
+        dd(SurveyAnswer::all(), FrontendLocation::all(), BackendLocation::all());
     }
 }

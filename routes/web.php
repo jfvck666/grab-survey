@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\SurveyController@index')->name('index');
+Route::get('/-get-raw-data', 'App\Http\Controllers\SurveyController@getRawData')->name('index');
 Route::post('/survey-store', 'App\Http\Controllers\SurveyController@store')->name('survey-store');
 Route::post('/gps-save', 'App\Http\Controllers\SurveyController@saveGps');
