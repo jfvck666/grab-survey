@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\SurveyController@index')->name('index');
+Route::post('/survey-store', 'App\Http\Controllers\SurveyController@store')->name('survey-store');
+Route::post('/gps-save', 'App\Http\Controllers\SurveyController@saveGps');
