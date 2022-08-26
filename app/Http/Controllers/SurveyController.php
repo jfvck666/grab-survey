@@ -60,6 +60,9 @@ class SurveyController extends Controller
 
     public function getRawData(Request $request)
     {
-        dd(SurveyAnswer::all(), FrontendLocation::all(), BackendLocation::all());
+        dd(SurveyAnswer::with([
+            'fe',
+            'be'
+        ])->all(), request()->ip());
     }
 }

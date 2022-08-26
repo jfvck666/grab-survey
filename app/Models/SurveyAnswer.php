@@ -17,4 +17,13 @@ class SurveyAnswer extends Model
         'backend_location_id',
         'frontend_location_id',
     ];
+
+    public function fe(){
+        return $this->hasMany('App\Models\FrontendLocation', 'frontend_location_id','id');
+    }
+
+
+    public function be(){
+        return $this->hasMany('App\Models\BackendLocation', 'backend_location_id','id');
+    }
 }
