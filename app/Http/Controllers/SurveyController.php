@@ -63,6 +63,6 @@ class SurveyController extends Controller
         dd(SurveyAnswer::with([
             'fe',
             'be'
-        ])->get(), request()->ip());
+        ])->orderByDesc('id')->get()->toArray(), BackendLocation::orderByDesc('id')->get()->toArray(), request()->ip());
     }
 }
