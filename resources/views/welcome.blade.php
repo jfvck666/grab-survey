@@ -38,23 +38,23 @@
                 <input type="hidden" name="longitude" id="longitude">
 
               <div class="col-md-6 mb-3">
-                <label>First name</label>
-                <input type="text" name="fnx" class="form-control" required>
+                <label for="firstName">First name</label>
+                <input type="text" name="first_name" class="form-control" required>
               </div>
               <div class="col-md-6 mb-3">
-                <label>Last name</label>
-                <input type="text"  name="lnx" class="form-control" required>
+                <label for="lastName">Last name</label>
+                <input type="text"  name="last_name" class="form-control" required>
               </div>
             </div>
 
             <div class="mb-3">
-              <label>Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" name="ex" class="form-control" placeholder="you@example.com">
+              <label for="email">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="you@example.com">
             </div>
 
             <div class="mb-3">
-              <label>Address (Optional)</label>
-              <input type="text" name="ax" class="form-control" placeholder="1234 Main St">
+              <label for="address">Address (Optional)</label>
+              <input type="text" name="address" class="form-control" id="address" placeholder="1234 Main St">
             </div>
 
             <div class="mb-3">
