@@ -30,7 +30,7 @@
       <div class="row">
         <div class="col-md-12">
           <h4 class="mb-3">Survey Form</h4>
-          <form action="{{ route('survey-store') }}" method="POST" class="needs-validation">
+          <form action="{{ route('survey-store') }}" method="POST">
             <div class="row">
                 @csrf
 
