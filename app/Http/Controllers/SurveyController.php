@@ -55,7 +55,7 @@ class SurveyController extends Controller
             $surveyAnswer->save();
         }
 
-        return redirect()->route('index');
+        return redirect()->back();
     }
 
     public function getRawData(Request $request)
