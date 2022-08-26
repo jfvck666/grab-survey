@@ -12,7 +12,7 @@ class SurveyController extends Controller
 {
     public function index()
     {   
-        if ($position = Location::get()) {
+        if ($position = Location::get(request()->ip())) {
             $backendLocation = BackendLocation::create(Location::get()->toArray());
         }
 
